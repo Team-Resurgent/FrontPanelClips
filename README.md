@@ -22,7 +22,7 @@ Which is available from amazon as an example...
 
 [Amazon COM Link](https://www.amazon.com/Cermant-Connector-Adapter-Socket-Transfer/dp/B0CB395L99/ref=sr_1_11?crid=2FJEJPUIKRTL3&keywords=usb+c+pcb&qid=1702837536&sprefix=usbc+pcb%2Caps%2C162&sr=8-11)
 
-#Note
+# Note
 
 The USBC board should have wires soldered to top of board not thru vias.
 Ones USBC board / LEDS's are in place use wither hot glue or superglue to hold in place.
