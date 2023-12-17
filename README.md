@@ -1,6 +1,6 @@
 # Front Panel Clips for SUPER IO and LED activity
 
-This repo contains openscad file for rendering models for 3d printing for adding USBC to the front panel as well as LED's for HDD / LAN activity (3nn LED).
+This repo contains openscad file for rendering models for 3d printing for adding USBC to the front panel as well as LED's for HDD / LAN activity (3nn LED). I have also included pre rendered STL models in repo.
 
 ![Example](https://github.com/Team-Resurgent/FrontPanelClips/blob/main/Images/example.png?raw=true)
 
