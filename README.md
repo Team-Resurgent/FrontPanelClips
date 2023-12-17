@@ -25,4 +25,5 @@ Which is available from amazon as an example...
 # Note
 
 The USBC board should have wires soldered to top of board not thru vias.
+
 Ones USBC board / LEDS's are in place use wither hot glue or superglue to hold in place.
