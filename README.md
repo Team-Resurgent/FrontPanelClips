@@ -8,7 +8,11 @@ Example of what the models look like in OpenScad
 
 ![OpenScad](https://github.com/Team-Resurgent/FrontPanelClips/blob/main/Images/openscad.png?raw=true)
 
-For the SuperIO part the following USBC board is used..
+I have designed the models for printing with a resin printer, however filament printer should work fine too. After printing slap off / cut the legs of as shown below...
+
+![3DPrint](https://github.com/Team-Resurgent/FrontPanelClips/blob/main/Images/3dprint.png?raw=true)
+
+For the SuperIO part the following USBC board is used...
 
 ![USBC](https://github.com/Team-Resurgent/FrontPanelClips/blob/main/Images/usbc.jpg?raw=true)
 
