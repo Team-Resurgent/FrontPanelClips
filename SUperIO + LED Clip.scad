@@ -108,57 +108,90 @@ module base()
 
 module ledbase()
 {
-    translate([18, 0, 0])
+    difference()
     {
-        difference()
+        cube([16, 19, 9]);
+        union() 
         {
-            cube([16, 19, 9]);
-            union() 
+            translate([6,8,2])
             {
-                translate([6,8,2])
-                {
-                    cube([4, 12, 9]);
-                }
-                translate([2,2,2])
-                {
-                    cube([12,19, 5]);
-                }
-                translate([2,14,2])
-                {
-                    cube([12,6, 8]);
-                }
-                translate([5,2.5,4.5])
-                {
-                    rotate([90,00,0])
-                    {
-                        cylinder(5, 1.6, 1.5);
-                    }
-                }
-                translate([11,2.5,4.5])
-                {
-                    rotate([90,00,0])
-                    {
-                        cylinder(5, 1.6, 1.5);
-                    }
-                }
-
+                cube([4, 12, 9]);
             }
-        }
-        
+            translate([2,2,2])
+            {
+                cube([12,19, 5]);
+            }
+            translate([2,14,2])
+            {
+                cube([12,6, 8]);
+            }
+            translate([5,2.5,4.5])
+            {
+                rotate([90,00,0])
+                {
+                    cylinder(5, 1.6, 1.5);
+                }
+            }
+            translate([11,2.5,4.5])
+            {
+                rotate([90,00,0])
+                {
+                    cylinder(5, 1.6, 1.5);
+                }
+            }
 
+        }
     }
 }
 
-// Super IO clip
-translate([4.5,4,9])
+module usbClip()
 {
-    clip();
+    // Super IO clip
+    translate([4.5,4,9])
+    {
+        clip();
+    }
+    base();
 }
-base();
 
-// LED clip
-translate([22.5,4,9])
+module ledClip()
 {
-    clip();
+    translate([4.5,4,9])
+    {
+        clip();
+    }
+    ledbase();
 }
-ledbase();
+
+module spacer()
+{
+    translate([16, 0, 0])
+    {
+        cube([4, 19, 9]);
+    }
+}
+
+translate([0, 0, 0])
+{
+    usbClip();
+    //spacer();
+}
+
+translate([20, 0, 0])
+{
+    ledClip();
+    //spacer();
+}
+
+translate([40, 0, 0])
+{
+    //ledClip();
+    //spacer();
+}
+
+translate([60, 0, 0])
+{
+    //ledClip();
+    //spacer();
+}
+
